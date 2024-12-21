@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Delete Student</title>
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #ffebee;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .container {
+        width: 100%;
+        max-width: 450px;
+        padding: 40px;
+        background-color: #ffffff;
+        border-radius: 12px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        text-align: center;
+    }
+    h1 {
+        color: #c62828;
+        font-size: 32px;
+        margin-bottom: 30px;
+        font-weight: 600;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    p {
+        color: #333;
+        font-size: 1.1em;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+    label {
+        display: block;
+        color: #333;
+        font-weight: bold;
+        margin: 10px 0;
+        font-size: 16px;
+    }
+    input {
+        width: 100%;
+        padding: 12px;
+        font-size: 14px;
+        border-radius: 8px;
+        border: 1px solid #ddd;
+        margin-bottom: 20px;
+        transition: all 0.3s;
+    }
+    input:focus {
+        border-color: #c62828;
+        outline: none;
+    }
+    button {
+        width: 100%;
+        padding: 15px;
+        font-size: 18px;
+        font-weight: bold;
+        color: white;
+        background-color: #c62828;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+    button:hover {
+        background-color: #b71c1c;
+        transform: scale(1.05);
+    }
+    footer {
+        margin-top: 30px;
+        font-size: 14px;
+        color: #777;
+    }
+    .info-box {
+        margin-bottom: 20px;
+        background-color: #ffebee;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .info-box h2 {
+        color: #c62828;
+        margin-bottom: 10px;
+    }
+    .info-box p {
+        font-size: 14px;
+        color: #555;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Info Box -->
+    <div class="info-box">
+        <h2>Delete Your Student Information</h2>
+        <p>To remove a student record from the system, simply enter the student ID below and click the "Delete Student" button.</p>
+    </div>
+
+    <!-- Delete Student Form -->
+    <form action="deletestudent">
+        <label for="id">Student-ID:</label>
+        <input type="text" name="id" placeholder="Enter Student ID" required>
+
+        <button type="submit">Delete Student</button>
+    </form>
+
+    <footer>
+        &copy; 2024 Student Management System. All rights reserved.
+    </footer>
+</div>
+
+</body>
+</html>
